@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rainbow_background1"
+    tools:context="com.example.android.emojiquizapp.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/QuizHeader"
+            android:text="@string/title" />
+
+        <TextView
+            style="@style/QuestionText"
+            android:text="@string/question_one" />
+
+        <RadioGroup
+            android:id="@+id/questionOneRadioGroup"
+            style="@style/AnswerRadioGroup">
+
+            <RadioButton
+                android:id="@+id/questionOneAnswerOneButton"
+                style="@style/RadioButton"
+                android:drawableEnd="@drawable/smiling_face_with_smiling_eyes"
+                android:drawableRight="@drawable/smiling_face_with_smiling_eyes" />
+
+            <RadioButton
+                android:id="@+id/questionOneAnswerTwoButton"
+                style="@style/RadioButton"
+                android:drawableEnd="@drawable/fire_1f525"
+                android:drawableRight="@drawable/fire_1f525" />
+
+            <RadioButton
+                android:id="@+id/questionOneAnswerThreeButton"
+                style="@style/RadioButton"
+                android:drawableEnd="@drawable/face_with_tears_of_joy"
+                android:drawableRight="@drawable/face_with_tears_of_joy" />
+
+            <RadioButton
+                android:id="@+id/questionOneAnswerFourButton"
+                style="@style/RadioButton"
+                android:drawableEnd="@drawable/shrug_1f937"
+                android:drawableRight="@drawable/shrug_1f937" />
+
+        </RadioGroup>
+
+        <TextView
+            style="@style/QuestionText"
+            android:text="@string/question_two" />
+
+        <RadioGroup
+            android:id="@+id/questionTwoRadioGroup"
+            style="@style/AnswerRadioGroup">
+
+            <RadioButton
+                android:id="@+id/questionTwoAnswerOneButton"
+                style="@style/RadioButton"
+                android:drawableEnd="@drawable/flag_for_russia"
+                android:drawableRight="@drawable/flag_for_russia"
+                android:text="@string/question_two_answer_one" />
+
+            <RadioButton
+                android:id="@+id/questionTwoAnswerTwoButton"
+                style="@style/RadioButton"
+                android:drawableEnd="@drawable/flag_for_us"
+                android:drawableRight="@drawable/flag_for_us"
+                android:text="@string/question_two_answer_two" />
+
+            <RadioButton
+                android:id="@+id/questionTwoAnswerThreeButton"
+                style="@style/RadioButton"
+                android:drawableEnd="@drawable/flag_for_china"
+                android:drawableRight="@drawable/flag_for_china"
+                android:text="@string/question_two_answer_three" />
+
+            <RadioButton
+                android:id="@+id/questionTwoAnswerFourButton"
+                style="@style/RadioButton"
+                android:drawableEnd="@drawable/flag_for_japan"
+                android:drawableRight="@drawable/flag_for_japan"
+                android:text="@string/question_two_answer_four" />
+
+        </RadioGroup>
+
+        <TextView
+            style="@style/QuestionText"
+            android:text="@string/question_three" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                style="@style/WaterPistolImage"
+                android:contentDescription="@string/water_pistol"
+                android:src="@drawable/water_pistol_1f52b"/>
+
+            <ImageView
+                style="@style/PistolImage"
+                android:contentDescription="@string/pistol"
+                android:src="@drawable/pistol_1f52b"/>
+
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/questionThreeRadioGroup"
+            style="@style/AnswerRadioGroup">
+
+            <RadioButton
+                android:id="@+id/questionThreeAnswerOneButton"
+                style="@style/RadioButton"
+                android:text="@string/question_three_answer_one" />
+
+            <RadioButton
+                android:id="@+id/questionThreeAnswerTwoButton"
+                style="@style/RadioButton"
+                android:text="@string/question_three_answer_two" />
+
+            <RadioButton
+                android:id="@+id/questionThreeAnswerThreeButton"
+                style="@style/RadioButton"
+                android:text="@string/question_three_answer_three" />
+
+            <RadioButton
+                android:id="@+id/questionThreeAnswerFourButton"
+                style="@style/RadioButton"
+                android:text="@string/question_three_answer_four" />
+
+        </RadioGroup>
+
+        <TextView
+            style="@style/QuestionText"
+            android:text="@string/question_four" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/globe_africa_europe"
+                android:src="@drawable/earth_globe_africa_europe"/>
+
+            <ImageView
+                style="@style/PartyEmoji"
+                android:contentDescription="@string/party_face_emoji"
+                android:src="@drawable/face_with_party_horn"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/globe_americas"
+                android:src="@drawable/earth_globe_americas"/>
+
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/questionFourRadioGroup"
+            style="@style/AnswerRadioGroup">
+
+            <RadioButton
+                android:id="@+id/questionFourAnswerOneButton"
+                style="@style/RadioButton"
+                android:text="@string/question_four_answer_one" />
+
+            <RadioButton
+                android:id="@+id/questionFourAnswerTwoButton"
+                style="@style/RadioButton"
+                android:text="@string/question_four_answer_two" />
+
+            <RadioButton
+                android:id="@+id/questionFourAnswerThreeButton"
+                style="@style/RadioButton"
+                android:text="@string/question_four_answer_three" />
+
+            <RadioButton
+                android:id="@+id/questionFourAnswerFourButton"
+                style="@style/RadioButton"
+                android:text="@string/question_four_answer_four" />
+
+        </RadioGroup>
+
+        <TextView
+            style="@style/QuestionText"
+            android:text="@string/question_five" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:contentDescription="@string/sleepy_face_emoji"
+            android:src="@drawable/sleepy_face"/>
+
+        <RadioGroup
+            android:id="@+id/questionFiveRadioGroup"
+            style="@style/AnswerRadioGroup">
+
+            <RadioButton
+                android:id="@+id/questionFiveAnswerOneButton"
+                style="@style/RadioButton"
+                android:text="@string/question_five_answer_one" />
+
+            <RadioButton
+                android:id="@+id/questionFiveAnswerTwoButton"
+                style="@style/RadioButton"
+                android:text="@string/question_five_answer_two" />
+
+            <RadioButton
+                android:id="@+id/questionFiveAnswerThreeButton"
+                style="@style/RadioButton"
+                android:text="@string/question_five_answer_three" />
+
+            <RadioButton
+                android:id="@+id/questionFiveAnswerFourButton"
+                style="@style/RadioButton"
+                android:text="@string/question_five_answer_four" />
+
+        </RadioGroup>
+
+        <TextView
+            style="@style/QuestionText"
+            android:text="@string/question_six" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:contentDescription="@string/peach_emoji"
+            android:src="@drawable/peach_1f351"/>
+
+        <RadioGroup
+            android:id="@+id/questionSixRadioGroup"
+            style="@style/AnswerRadioGroup">
+
+            <RadioButton
+                android:id="@+id/questionSixAnswerOneButton"
+                style="@style/RadioButton"
+                android:text="@string/question_six_answer_one" />
+
+            <RadioButton
+                android:id="@+id/questionSixAnswerTwoButton"
+                style="@style/RadioButton"
+                android:text="@string/question_six_answer_two" />
+
+            <RadioButton
+                android:id="@+id/questionSixAnswerThreeButton"
+                style="@style/RadioButton"
+                android:text="@string/question_six_answer_three" />
+
+            <RadioButton
+                android:id="@+id/questionSixAnswerFourButton"
+                style="@style/RadioButton"
+                android:text="@string/question_six_answer_four" />
+
+        </RadioGroup>
+
+        <TextView
+            style="@style/QuestionText"
+            android:text="@string/question_seven" />
+
+        <RadioGroup
+            android:id="@+id/questionSevenRadioGroup"
+            style="@style/AnswerRadioGroup">
+
+            <RadioButton
+                android:id="@+id/questionSevenAnswerOneButton"
+                style="@style/RadioButton"
+                android:drawableEnd="@drawable/face_with_rolling_eyes"
+                android:drawableRight="@drawable/face_with_rolling_eyes" />
+
+            <RadioButton
+                android:id="@+id/questionSevenAnswerTwoButton"
+                style="@style/RadioButton"
+                android:drawableEnd="@drawable/poop_emoji"
+                android:drawableRight="@drawable/poop_emoji" />
+
+            <RadioButton
+                android:id="@+id/questionSevenAnswerThreeButton"
+                style="@style/RadioButton"
+                android:drawableEnd="@drawable/face_palm"
+                android:drawableRight="@drawable/face_palm" />
+
+            <RadioButton
+                android:id="@+id/questionSevenAnswerFourButton"
+                style="@style/RadioButton"
+                android:drawableEnd="@drawable/thinking_face"
+                android:drawableRight="@drawable/thinking_face" />
+
+        </RadioGroup>
+
+        <TextView
+            style="@style/QuestionText"
+            android:text="@string/question_eight" />
+
+        <EditText
+            android:id="@+id/questionEightAnswer"
+            style="@style/YearEditText"
+            android:hint="@string/year_hint" />
+
+        <TextView
+            style="@style/QuestionText"
+            android:text="@string/question_nine"/>
+
+        <CheckBox
+            android:id="@+id/questionNineAnswerOne"
+            style="@style/CheckBox"
+            android:drawableEnd="@drawable/pirate_flag"
+            android:drawableRight="@drawable/pirate_flag"
+            android:text="@string/question_nine_answer_one"/>
+
+        <CheckBox
+            android:id="@+id/questionNineAnswerTwo"
+            style="@style/CheckBox"
+            android:drawableEnd="@drawable/infinity"
+            android:drawableRight="@drawable/infinity"
+            android:text="@string/question_nine_answer_two" />
+
+        <CheckBox
+            android:id="@+id/questionNineAnswerThree"
+            style="@style/CheckBox"
+            android:drawableEnd="@drawable/person_cartwheeling"
+            android:drawableRight="@drawable/person_cartwheeling"
+            android:text="@string/question_nine_answer_three"/>
+
+        <CheckBox
+            android:id="@+id/questionNineAnswerFour"
+            style="@style/CheckBox"
+            android:drawableEnd="@drawable/softball_1f94e"
+            android:drawableRight="@drawable/softball_1f94e"
+            android:text="@string/question_nine_answer_four"/>
+
+        <TextView
+            style="@style/QuestionText"
+            android:text="@string/question_ten"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:contentDescription="@string/thinking_face"
+            android:src="@drawable/thinking_face"/>
+
+        <CheckBox
+            android:id="@+id/questionTenAnswerOne"
+            style="@style/CheckBox"
+            android:text="@string/question_ten_answer_one"/>
+
+        <CheckBox
+            android:id="@+id/questionTenAnswerTwo"
+            style="@style/CheckBox"
+            android:text="@string/question_ten_answer_two" />
+
+        <CheckBox
+            android:id="@+id/questionTenAnswerThree"
+            style="@style/CheckBox"
+            android:text="@string/question_ten_answer_three"/>
+
+        <CheckBox
+            android:id="@+id/questionTenAnswerFour"
+            style="@style/CheckBox"
+            android:text="@string/question_ten_answer_four"/>
+
+        <Button
+            style="@style/SubmitAnswerButton"
+            android:onClick="submitAnswers"
+            android:text="@string/submit_answers" />
+
+        <Button
+            style="@style/ResetButton"
+            android:onClick="reset"
+            android:text="@string/reset" />
+
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

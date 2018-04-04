@@ -1,0 +1,120 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:colorButtonNormal">@color/deepPurpleA100</item>
+    </style>
+
+    <style name="QuizHeader">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">@dimen/value44sp</item>
+        <item name="android:paddingTop">@dimen/value16dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="QuestionText">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">@dimen/value20sp</item>
+        <item name="android:padding">@dimen/value8dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_marginTop">@dimen/value16dp</item>
+    </style>
+
+    <style name="AnswerRadioGroup">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">start</item>
+        <item name="android:layout_marginLeft">@dimen/value80dp</item>
+        <item name="android:layout_marginStart">@dimen/value80dp</item>
+    </style>
+
+    <style name="RadioButtonEmoji">
+        <item name="android:layout_height">@dimen/value52dp</item>
+        <item name="android:layout_width">@dimen/value88dp</item>
+        <item name="android:layout_margin">@dimen/value8dp</item>
+        <item name="android:buttonTint">@color/white</item>
+    </style>
+
+    <style name="RadioButton">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_margin">@dimen/value8dp</item>
+        <item name="android:buttonTint">@color/white</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/value20sp</item>
+    </style>
+
+    <style name="WaterPistolImage">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginRight">@dimen/value20dp</item>
+        <item name="android:layout_marginEnd">@dimen/value20dp</item>
+    </style>
+
+    <style name="PistolImage">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/value20dp</item>
+        <item name="android:layout_marginStart">@dimen/value20dp</item>
+    </style>
+
+    <style name="PartyEmoji">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/value20dp</item>
+        <item name="android:layout_marginStart">@dimen/value20dp</item>
+        <item name="android:layout_marginRight">@dimen/value20dp</item>
+        <item name="android:layout_marginEnd">@dimen/value20dp</item>
+    </style>
+
+    <style name="YearEditText">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/value80dp</item>
+        <item name="android:layout_marginStart">@dimen/value80dp</item>
+        <item name="android:textColor">@color/purple900</item>
+        <item name="android:maxLength">4</item>
+        <item name="android:inputType">number</item>
+        <item name="android:imeOptions">actionDone</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:textSize">@dimen/value28sp</item>
+    </style>
+
+    <style name="CheckBox">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_margin">@dimen/value8dp</item>
+        <item name="android:buttonTint">@color/white</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/value20sp</item>
+    </style>
+
+    <style name="SubmitAnswerButton">
+        <item name="android:textColor">@color/purple900</item>
+        <item name="android:textSize">@dimen/value16sp</item>
+        <item name="android:layout_marginBottom">@dimen/value8dp</item>
+        <item name="android:layout_marginTop">@dimen/value16dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="ResetButton">
+        <item name="android:textColor">@color/purple900</item>
+        <item name="android:textSize">@dimen/value16sp</item>
+        <item name="android:layout_marginBottom">@dimen/value8dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Text size values -->
+    <dimen name="value16sp">16sp</dimen>
+    <dimen name="value20sp">20sp</dimen>
+    <dimen name="value28sp">28sp</dimen>
+    <dimen name="value44sp">44sp</dimen>
+
+    <!-- Density-independent pixel values -->
+    <dimen name="value8dp">8dp</dimen>
+    <dimen name="value16dp">16dp</dimen>
+    <dimen name="value52dp">52dp</dimen>
+    <dimen name="value20dp">20dp</dimen>
+    <dimen name="value80dp">80dp</dimen>
+    <dimen name="value88dp">88dp</dimen>
+</resources>

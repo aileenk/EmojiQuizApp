@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">Emoji Quiz App</string>
+
+    <string name="title">Emoji Quiz!</string>
+
+    <string name="question_one">Which emoji was Oxford Dictionaries\' Word of the Year 2015?</string>
+
+    <string name="question_two">In which country was the first emoji created?</string>
+    <string name="question_two_answer_one">Russia\u0020</string>
+    <string name="question_two_answer_two">United States\u0020</string>
+    <string name="question_two_answer_three">China\u0020</string>
+    <string name="question_two_answer_four">Japan\u0020</string>
+
+    <string name="question_three">Which company displays a toy squirt gun emoji instead of a pistol?</string>
+    <string name="water_pistol">Water Pistol Emoji</string>
+    <string name="pistol">Pistol Emoji</string>
+    <string name="question_three_answer_one">Apple</string>
+    <string name="question_three_answer_two">Facebook</string>
+    <string name="question_three_answer_three">Google</string>
+    <string name="question_three_answer_four">Twitter</string>
+
+    <string name="question_four">When is World Emoji Day?</string>
+    <string name="globe_africa_europe">Globe showing Africa and Europe</string>
+    <string name="party_face_emoji">Emoji with party hat and horn</string>
+    <string name="globe_americas">Globe showing the Americas</string>
+    <string name="question_four_answer_one">August 1</string>
+    <string name="question_four_answer_two">July 17</string>
+    <string name="question_four_answer_three">July 15</string>
+    <string name="question_four_answer_four">February 14</string>
+
+    <string name="question_five">What feeling was this emoji originally meant to convey?</string>
+    <string name="sleepy_face_emoji">Sleepy Face Emoji</string>
+    <string name="question_five_answer_one">Sad</string>
+    <string name="question_five_answer_two">Sick</string>
+    <string name="question_five_answer_three">Gross</string>
+    <string name="question_five_answer_four">Sleepy</string>
+
+    <string name="question_six">What percentage of people use the peach emoji to refer to the fruit?</string>
+    <string name="peach_emoji">Peach Emoji</string>
+    <string name="question_six_answer_one">86%</string>
+    <string name="question_six_answer_two">7%</string>
+    <string name="question_six_answer_three">28%</string>
+    <string name="question_six_answer_four">63%</string>
+
+    <string name="question_seven">Which emoji was voted Best New Emoji in the 2016 World Emoji Awards?</string>
+
+    <string name="question_eight">What year was the first emoji created?</string>
+    <string name="year_hint">YYYY</string>
+
+    <string name="question_nine">Which of the following 3 emoji are new emoji to be released in 2018?</string>
+    <string name="question_nine_answer_one">Pirate Flag\u0020</string>
+    <string name="question_nine_answer_two">Infinity\u0020</string>
+    <string name="question_nine_answer_three">Person Cartwheeling\u0020</string>
+    <string name="question_nine_answer_four">Softball\u0020</string>
+
+    <string name="question_ten">Which 3 names is the Thinking Face also known as?</string>
+    <string name="thinking_face">Thinking Face</string>
+    <string name="question_ten_answer_one">Hand Face</string>
+    <string name="question_ten_answer_two">Chin Thumb</string>
+    <string name="question_ten_answer_three">Thinker</string>
+    <string name="question_ten_answer_four">Throwing Shade</string>
+
+
+    <string name="submit_answers">Submit Answers</string>
+
+    <string name="reset">Reset</string>
+
+</resources>
