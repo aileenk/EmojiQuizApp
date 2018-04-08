@@ -4,6 +4,7 @@
     <!-- Text size values -->
     <dimen name="value16sp">16sp</dimen>
     <dimen name="value20sp">20sp</dimen>
+    <dimen name="value24sp">24sp</dimen>
     <dimen name="value28sp">28sp</dimen>
     <dimen name="value44sp">44sp</dimen>
 
