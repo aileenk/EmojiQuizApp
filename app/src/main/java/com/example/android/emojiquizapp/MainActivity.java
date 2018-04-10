@@ -24,43 +24,43 @@ public class MainActivity extends AppCompatActivity {
     private static final String ANSWER_FIVE = "answerFive";
     private static final String ANSWER_SIX = "answerSix";
     private static final String ANSWER_SEVEN = "answerSeven";
-
+    private RadioGroup questionOne;
     private RadioButton questionOneAnswerOne;
     private RadioButton questionOneAnswerTwo;
     private RadioButton questionOneAnswerThree;
     private RadioButton questionOneAnswerFour;
     private String selectedAnswerOne;
-
+    private RadioGroup questionTwo;
     private RadioButton questionTwoAnswerOne;
     private RadioButton questionTwoAnswerTwo;
     private RadioButton questionTwoAnswerThree;
     private RadioButton questionTwoAnswerFour;
     private String selectedAnswerTwo;
-
+    private RadioGroup questionThree;
     private RadioButton questionThreeAnswerOne;
     private RadioButton questionThreeAnswerTwo;
     private RadioButton questionThreeAnswerThree;
     private RadioButton questionThreeAnswerFour;
     private String selectedAnswerThree;
-
+    private RadioGroup questionFour;
     private RadioButton questionFourAnswerOne;
     private RadioButton questionFourAnswerTwo;
     private RadioButton questionFourAnswerThree;
     private RadioButton questionFourAnswerFour;
     private String selectedAnswerFour;
-
+    private RadioGroup questionFive;
     private RadioButton questionFiveAnswerOne;
     private RadioButton questionFiveAnswerTwo;
     private RadioButton questionFiveAnswerThree;
     private RadioButton questionFiveAnswerFour;
     private String selectedAnswerFive;
-
+    private RadioGroup questionSix;
     private RadioButton questionSixAnswerOne;
     private RadioButton questionSixAnswerTwo;
     private RadioButton questionSixAnswerThree;
     private RadioButton questionSixAnswerFour;
     private String selectedAnswerSix;
-
+    private RadioGroup questionSeven;
     private RadioButton questionSevenAnswerOne;
     private RadioButton questionSevenAnswerTwo;
     private RadioButton questionSevenAnswerThree;
@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
         if (!TextUtils.isEmpty(selectedAnswerOne)) {
             setRadioButtonState();
         }
-        final RadioGroup questionOne = findViewById(R.id.questionOneRadioGroup);
+        RadioGroup questionOne = findViewById(R.id.questionOneRadioGroup);
         questionOne.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup questionOne, int id) {
@@ -99,7 +99,7 @@ public class MainActivity extends AppCompatActivity {
         if (!TextUtils.isEmpty(selectedAnswerTwo)) {
             setRadioButtonState();
         }
-        final RadioGroup questionTwo = findViewById(R.id.questionTwoRadioGroup);
+        RadioGroup questionTwo = findViewById(R.id.questionTwoRadioGroup);
         questionTwo.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup questionTwo, int id) {
@@ -121,7 +121,7 @@ public class MainActivity extends AppCompatActivity {
         if (!TextUtils.isEmpty(selectedAnswerThree)) {
             setRadioButtonState();
         }
-        final RadioGroup questionThree = findViewById(R.id.questionThreeRadioGroup);
+        RadioGroup questionThree = findViewById(R.id.questionThreeRadioGroup);
         questionThree.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup questionThree, int id) {
@@ -143,7 +143,7 @@ public class MainActivity extends AppCompatActivity {
         if (!TextUtils.isEmpty(selectedAnswerFour)) {
             setRadioButtonState();
         }
-        final RadioGroup questionFour = findViewById(R.id.questionFourRadioGroup);
+        RadioGroup questionFour = findViewById(R.id.questionFourRadioGroup);
         questionFour.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup questionFourRG, int id) {
@@ -165,7 +165,7 @@ public class MainActivity extends AppCompatActivity {
         if (!TextUtils.isEmpty(selectedAnswerFive)) {
             setRadioButtonState();
         }
-        final RadioGroup questionFive = findViewById(R.id.questionFiveRadioGroup);
+        RadioGroup questionFive = findViewById(R.id.questionFiveRadioGroup);
         questionFive.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup questionFive, int id) {
@@ -187,7 +187,7 @@ public class MainActivity extends AppCompatActivity {
         if (!TextUtils.isEmpty(selectedAnswerSix)) {
             setRadioButtonState();
         }
-        final RadioGroup questionSix = findViewById(R.id.questionSixRadioGroup);
+        RadioGroup questionSix = findViewById(R.id.questionSixRadioGroup);
         questionSix.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup questionSixRG, int id) {
@@ -209,7 +209,7 @@ public class MainActivity extends AppCompatActivity {
         if (!TextUtils.isEmpty(selectedAnswerSeven)) {
             setRadioButtonState();
         }
-        final RadioGroup questionSeven = findViewById(R.id.questionSevenRadioGroup);
+        RadioGroup questionSeven = findViewById(R.id.questionSevenRadioGroup);
         questionSeven.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup questionSeven, int id) {
@@ -454,18 +454,18 @@ public class MainActivity extends AppCompatActivity {
     public void reset(View view) {
         //Clear radio buttons
         RadioGroup questionOne = findViewById(R.id.questionOneRadioGroup);
-        questionOne.clearCheck();
         RadioGroup questionTwo = findViewById(R.id.questionTwoRadioGroup);
-        questionTwo.clearCheck();
         RadioGroup questionThree = findViewById(R.id.questionThreeRadioGroup);
-        questionThree.clearCheck();
         RadioGroup questionFour = findViewById(R.id.questionFourRadioGroup);
-        questionFour.clearCheck();
         RadioGroup questionFive = findViewById(R.id.questionFiveRadioGroup);
-        questionFive.clearCheck();
         RadioGroup questionSix = findViewById(R.id.questionSixRadioGroup);
-        questionSix.clearCheck();
         RadioGroup questionSeven = findViewById(R.id.questionSevenRadioGroup);
+        questionOne.clearCheck();
+        questionTwo.clearCheck();
+        questionThree.clearCheck();
+        questionFour.clearCheck();
+        questionFive.clearCheck();
+        questionSix.clearCheck();
         questionSeven.clearCheck();
 
         //Clear EditText
