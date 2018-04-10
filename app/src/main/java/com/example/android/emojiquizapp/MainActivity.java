@@ -77,10 +77,10 @@ public class MainActivity extends AppCompatActivity {
         if (!TextUtils.isEmpty(selectedAnswerOne)) {
             setRadioButtonState();
         }
-        final RadioGroup questionOneRG = findViewById(R.id.questionOneRadioGroup);
-        questionOneRG.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+        final RadioGroup questionOne = findViewById(R.id.questionOneRadioGroup);
+        questionOne.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
-            public void onCheckedChanged(RadioGroup questionOneRG, int id) {
+            public void onCheckedChanged(RadioGroup questionOne, int id) {
                 if (id == R.id.questionOneAnswerOneButton) {
                     selectedAnswerOne = "ONE";
                 }
@@ -99,10 +99,10 @@ public class MainActivity extends AppCompatActivity {
         if (!TextUtils.isEmpty(selectedAnswerTwo)) {
             setRadioButtonState();
         }
-        final RadioGroup questionTwoRG = findViewById(R.id.questionTwoRadioGroup);
-        questionTwoRG.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+        final RadioGroup questionTwo = findViewById(R.id.questionTwoRadioGroup);
+        questionTwo.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
-            public void onCheckedChanged(RadioGroup questionTwoRG, int id) {
+            public void onCheckedChanged(RadioGroup questionTwo, int id) {
                 if (id == R.id.questionTwoAnswerOneButton) {
                     selectedAnswerTwo = "ONE";
                 }
@@ -121,10 +121,10 @@ public class MainActivity extends AppCompatActivity {
         if (!TextUtils.isEmpty(selectedAnswerThree)) {
             setRadioButtonState();
         }
-        final RadioGroup questionThreeRG = findViewById(R.id.questionThreeRadioGroup);
-        questionThreeRG.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+        final RadioGroup questionThree = findViewById(R.id.questionThreeRadioGroup);
+        questionThree.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
-            public void onCheckedChanged(RadioGroup questionThreeRG, int id) {
+            public void onCheckedChanged(RadioGroup questionThree, int id) {
                 if (id == R.id.questionThreeAnswerOneButton) {
                     selectedAnswerThree = "ONE";
                 }
@@ -143,8 +143,8 @@ public class MainActivity extends AppCompatActivity {
         if (!TextUtils.isEmpty(selectedAnswerFour)) {
             setRadioButtonState();
         }
-        final RadioGroup questionFourRG = findViewById(R.id.questionFourRadioGroup);
-        questionFourRG.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+        final RadioGroup questionFour = findViewById(R.id.questionFourRadioGroup);
+        questionFour.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup questionFourRG, int id) {
                 if (id == R.id.questionFourAnswerOneButton) {
@@ -165,10 +165,10 @@ public class MainActivity extends AppCompatActivity {
         if (!TextUtils.isEmpty(selectedAnswerFive)) {
             setRadioButtonState();
         }
-        final RadioGroup questionFiveRG = findViewById(R.id.questionFiveRadioGroup);
-        questionFiveRG.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+        final RadioGroup questionFive = findViewById(R.id.questionFiveRadioGroup);
+        questionFive.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
-            public void onCheckedChanged(RadioGroup questionFiveRG, int id) {
+            public void onCheckedChanged(RadioGroup questionFive, int id) {
                 if (id == R.id.questionFiveAnswerOneButton) {
                     selectedAnswerFive = "ONE";
                 }
@@ -187,8 +187,8 @@ public class MainActivity extends AppCompatActivity {
         if (!TextUtils.isEmpty(selectedAnswerSix)) {
             setRadioButtonState();
         }
-        final RadioGroup questionSixRG = findViewById(R.id.questionSixRadioGroup);
-        questionSixRG.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+        final RadioGroup questionSix = findViewById(R.id.questionSixRadioGroup);
+        questionSix.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup questionSixRG, int id) {
                 if (id == R.id.questionSixAnswerOneButton) {
@@ -209,10 +209,10 @@ public class MainActivity extends AppCompatActivity {
         if (!TextUtils.isEmpty(selectedAnswerSeven)) {
             setRadioButtonState();
         }
-        final RadioGroup questionSevenRG = findViewById(R.id.questionSevenRadioGroup);
-        questionSevenRG.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+        final RadioGroup questionSeven = findViewById(R.id.questionSevenRadioGroup);
+        questionSeven.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
-            public void onCheckedChanged(RadioGroup questionSevenRG, int id) {
+            public void onCheckedChanged(RadioGroup questionSeven, int id) {
                 if (id == R.id.questionSevenAnswerOneButton) {
                     selectedAnswerSeven = "ONE";
                 }
