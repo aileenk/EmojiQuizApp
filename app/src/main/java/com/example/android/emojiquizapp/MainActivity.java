@@ -2,7 +2,6 @@ package com.example.android.emojiquizapp;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
@@ -16,57 +15,70 @@ public class MainActivity extends AppCompatActivity {
     //Starting score is 0
     int score = 0;
 
-    //declaring to save instance state of radio buttons
-    private static final String ANSWER_ONE = "answerOne";
-    private static final String ANSWER_TWO = "answerTwo";
-    private static final String ANSWER_THREE = "answerThree";
-    private static final String ANSWER_FOUR = "answerFour";
-    private static final String ANSWER_FIVE = "answerFive";
-    private static final String ANSWER_SIX = "answerSix";
-    private static final String ANSWER_SEVEN = "answerSeven";
-    private RadioGroup questionOne;
-    private RadioButton questionOneAnswerOne;
-    private RadioButton questionOneAnswerTwo;
-    private RadioButton questionOneAnswerThree;
-    private RadioButton questionOneAnswerFour;
-    private String selectedAnswerOne;
-    private RadioGroup questionTwo;
-    private RadioButton questionTwoAnswerOne;
-    private RadioButton questionTwoAnswerTwo;
-    private RadioButton questionTwoAnswerThree;
-    private RadioButton questionTwoAnswerFour;
-    private String selectedAnswerTwo;
-    private RadioGroup questionThree;
-    private RadioButton questionThreeAnswerOne;
-    private RadioButton questionThreeAnswerTwo;
-    private RadioButton questionThreeAnswerThree;
-    private RadioButton questionThreeAnswerFour;
-    private String selectedAnswerThree;
-    private RadioGroup questionFour;
-    private RadioButton questionFourAnswerOne;
-    private RadioButton questionFourAnswerTwo;
-    private RadioButton questionFourAnswerThree;
-    private RadioButton questionFourAnswerFour;
-    private String selectedAnswerFour;
-    private RadioGroup questionFive;
-    private RadioButton questionFiveAnswerOne;
-    private RadioButton questionFiveAnswerTwo;
-    private RadioButton questionFiveAnswerThree;
-    private RadioButton questionFiveAnswerFour;
-    private String selectedAnswerFive;
-    private RadioGroup questionSix;
-    private RadioButton questionSixAnswerOne;
-    private RadioButton questionSixAnswerTwo;
-    private RadioButton questionSixAnswerThree;
-    private RadioButton questionSixAnswerFour;
-    private String selectedAnswerSix;
-    private RadioGroup questionSeven;
-    private RadioButton questionSevenAnswerOne;
-    private RadioButton questionSevenAnswerTwo;
-    private RadioButton questionSevenAnswerThree;
-    private RadioButton questionSevenAnswerFour;
-    private String selectedAnswerSeven;
+    //Declaring RadioButtons and RadioGroups
+    static final String ANSWER_ONE = "answerOne";
+    static final String ANSWER_TWO = "answerTwo";
+    static final String ANSWER_THREE = "answerThree";
+    static final String ANSWER_FOUR = "answerFour";
+    static final String ANSWER_FIVE = "answerFive";
+    static final String ANSWER_SIX = "answerSix";
+    static final String ANSWER_SEVEN = "answerSeven";
+    RadioGroup questionOne;
+    RadioButton questionOneAnswerOne;
+    RadioButton questionOneAnswerTwo;
+    RadioButton questionOneAnswerThree;
+    RadioButton questionOneAnswerFour;
+    String selectedAnswerOne;
+    RadioGroup questionTwo;
+    RadioButton questionTwoAnswerOne;
+    RadioButton questionTwoAnswerTwo;
+    RadioButton questionTwoAnswerThree;
+    RadioButton questionTwoAnswerFour;
+    String selectedAnswerTwo;
+    RadioGroup questionThree;
+    RadioButton questionThreeAnswerOne;
+    RadioButton questionThreeAnswerTwo;
+    RadioButton questionThreeAnswerThree;
+    RadioButton questionThreeAnswerFour;
+    String selectedAnswerThree;
+    RadioGroup questionFour;
+    RadioButton questionFourAnswerOne;
+    RadioButton questionFourAnswerTwo;
+    RadioButton questionFourAnswerThree;
+    RadioButton questionFourAnswerFour;
+    String selectedAnswerFour;
+    RadioGroup questionFive;
+    RadioButton questionFiveAnswerOne;
+    RadioButton questionFiveAnswerTwo;
+    RadioButton questionFiveAnswerThree;
+    RadioButton questionFiveAnswerFour;
+    String selectedAnswerFive;
+    RadioGroup questionSix;
+    RadioButton questionSixAnswerOne;
+    RadioButton questionSixAnswerTwo;
+    RadioButton questionSixAnswerThree;
+    RadioButton questionSixAnswerFour;
+    String selectedAnswerSix;
+    RadioGroup questionSeven;
+    RadioButton questionSevenAnswerOne;
+    RadioButton questionSevenAnswerTwo;
+    RadioButton questionSevenAnswerThree;
+    RadioButton questionSevenAnswerFour;
+    String selectedAnswerSeven;
 
+    //Declaring question 8
+    EditText questionEightAnswer;
+
+    //Declaring questions 9 and 10
+    CheckBox questionNineAnswerOne;
+    CheckBox questionNineAnswerTwo;
+    CheckBox questionNineAnswerThree;
+    CheckBox questionNineAnswerFour;
+
+    CheckBox questionTenAnswerOne;
+    CheckBox questionTenAnswerTwo;
+    CheckBox questionTenAnswerThree;
+    CheckBox questionTenAnswerFour;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -146,7 +158,7 @@ public class MainActivity extends AppCompatActivity {
         RadioGroup questionFour = findViewById(R.id.questionFourRadioGroup);
         questionFour.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
-            public void onCheckedChanged(RadioGroup questionFourRG, int id) {
+            public void onCheckedChanged(RadioGroup questionFour, int id) {
                 if (id == R.id.questionFourAnswerOneButton) {
                     selectedAnswerFour = "ONE";
                 }
@@ -190,7 +202,7 @@ public class MainActivity extends AppCompatActivity {
         RadioGroup questionSix = findViewById(R.id.questionSixRadioGroup);
         questionSix.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
-            public void onCheckedChanged(RadioGroup questionSixRG, int id) {
+            public void onCheckedChanged(RadioGroup questionSix, int id) {
                 if (id == R.id.questionSixAnswerOneButton) {
                     selectedAnswerSix = "ONE";
                 }
@@ -378,7 +390,7 @@ public class MainActivity extends AppCompatActivity {
     //When user clicks "Submit Answer" button
     public void submitAnswers(View view) {
 
-        //Identifying the correct answers in RadioGroups
+        //Initializing the correct answers in RadioGroups
         RadioButton questionOneAnswerThree = findViewById(R.id.questionOneAnswerThreeButton);
         RadioButton questionTwoAnswerFour = findViewById(R.id.questionTwoAnswerFourButton);
         RadioButton questionThreeAnswerOne = findViewById(R.id.questionThreeAnswerOneButton);
@@ -416,14 +428,14 @@ public class MainActivity extends AppCompatActivity {
             score++;
         }
 
-        //Question 8 correct answer
+        //Initializing question 8 answer
         EditText questionEightAnswer = findViewById(R.id.questionEightAnswer);
         // +1 for correct answer
         if (questionEightAnswer.getText().toString().equals("1999")) {
             score++;
         }
 
-        //Identifying checked answers in checkboxes
+        //Initializing checkboxes (questions 9 and 10)
         CheckBox questionNineAnswerOne = findViewById(R.id.questionNineAnswerOne);
         CheckBox questionNineAnswerTwo = findViewById(R.id.questionNineAnswerTwo);
         CheckBox questionNineAnswerThree = findViewById(R.id.questionNineAnswerThree);
@@ -439,7 +451,6 @@ public class MainActivity extends AppCompatActivity {
             score++;
         }
 
-        //Calculating score if 3 correct answers are checked and 1 incorrect answer is unchecked
         if (!questionTenAnswerOne.isChecked() && questionTenAnswerTwo.isChecked() && questionTenAnswerThree.isChecked() && questionTenAnswerFour.isChecked()) {
             score++;
         }
@@ -454,18 +465,18 @@ public class MainActivity extends AppCompatActivity {
     public void reset(View view) {
         //Clear radio buttons
         RadioGroup questionOne = findViewById(R.id.questionOneRadioGroup);
-        RadioGroup questionTwo = findViewById(R.id.questionTwoRadioGroup);
-        RadioGroup questionThree = findViewById(R.id.questionThreeRadioGroup);
-        RadioGroup questionFour = findViewById(R.id.questionFourRadioGroup);
-        RadioGroup questionFive = findViewById(R.id.questionFiveRadioGroup);
-        RadioGroup questionSix = findViewById(R.id.questionSixRadioGroup);
-        RadioGroup questionSeven = findViewById(R.id.questionSevenRadioGroup);
         questionOne.clearCheck();
+        RadioGroup questionTwo = findViewById(R.id.questionTwoRadioGroup);
         questionTwo.clearCheck();
+        RadioGroup questionThree = findViewById(R.id.questionThreeRadioGroup);
         questionThree.clearCheck();
+        RadioGroup questionFour = findViewById(R.id.questionFourRadioGroup);
         questionFour.clearCheck();
+        RadioGroup questionFive = findViewById(R.id.questionFiveRadioGroup);
         questionFive.clearCheck();
+        RadioGroup questionSix = findViewById(R.id.questionSixRadioGroup);
         questionSix.clearCheck();
+        RadioGroup questionSeven = findViewById(R.id.questionSevenRadioGroup);
         questionSeven.clearCheck();
 
         //Clear EditText
