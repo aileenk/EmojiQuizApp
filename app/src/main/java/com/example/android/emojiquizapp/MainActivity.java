@@ -464,39 +464,23 @@ public class MainActivity extends AppCompatActivity {
     //When user clicks "Reset" button
     public void reset(View view) {
         //Clear radio buttons
-        RadioGroup questionOne = findViewById(R.id.questionOneRadioGroup);
         questionOne.clearCheck();
-        RadioGroup questionTwo = findViewById(R.id.questionTwoRadioGroup);
         questionTwo.clearCheck();
-        RadioGroup questionThree = findViewById(R.id.questionThreeRadioGroup);
         questionThree.clearCheck();
-        RadioGroup questionFour = findViewById(R.id.questionFourRadioGroup);
         questionFour.clearCheck();
-        RadioGroup questionFive = findViewById(R.id.questionFiveRadioGroup);
         questionFive.clearCheck();
-        RadioGroup questionSix = findViewById(R.id.questionSixRadioGroup);
         questionSix.clearCheck();
-        RadioGroup questionSeven = findViewById(R.id.questionSevenRadioGroup);
         questionSeven.clearCheck();
 
         //Clear EditText
-        EditText questionEightAnswer = findViewById(R.id.questionEightAnswer);
         questionEightAnswer.getText().clear();
 
         //Clear checkboxes
-        CheckBox questionNineAnswerOne = findViewById(R.id.questionNineAnswerOne);
-        CheckBox questionNineAnswerTwo = findViewById(R.id.questionNineAnswerTwo);
-        CheckBox questionNineAnswerThree = findViewById(R.id.questionNineAnswerThree);
-        CheckBox questionNineAnswerFour = findViewById(R.id.questionNineAnswerFour);
         questionNineAnswerOne.setChecked(false);
         questionNineAnswerTwo.setChecked(false);
         questionNineAnswerThree.setChecked(false);
         questionNineAnswerFour.setChecked(false);
 
-        CheckBox questionTenAnswerOne = findViewById(R.id.questionTenAnswerOne);
-        CheckBox questionTenAnswerTwo = findViewById(R.id.questionTenAnswerTwo);
-        CheckBox questionTenAnswerThree = findViewById(R.id.questionTenAnswerThree);
-        CheckBox questionTenAnswerFour = findViewById(R.id.questionTenAnswerFour);
         questionTenAnswerOne.setChecked(false);
         questionTenAnswerTwo.setChecked(false);
         questionTenAnswerThree.setChecked(false);
