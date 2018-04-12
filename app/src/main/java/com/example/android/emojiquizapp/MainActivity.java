@@ -66,10 +66,10 @@ public class MainActivity extends AppCompatActivity {
     RadioButton questionSevenAnswerFour;
     String selectedAnswerSeven;
 
-    //Declaring question 8
+    //Declaring Question 8
     EditText questionEightAnswer;
 
-    //Declaring questions 9 and 10
+    //Declaring Questions 9 and 10
     CheckBox questionNineAnswerOne;
     CheckBox questionNineAnswerTwo;
     CheckBox questionNineAnswerThree;
@@ -85,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //Save instance state for radio buttons
+        //Save instance state for RadioButtons
         if (!TextUtils.isEmpty(selectedAnswerOne)) {
             setRadioButtonState();
         }
@@ -239,6 +239,20 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+
+        //Initializing Question 8 Answer
+        questionEightAnswer = findViewById(R.id.questionEightAnswer);
+
+        //Initializing Checkboxes (Questions 9 and 10)
+        questionNineAnswerOne = findViewById(R.id.questionNineAnswerOne);
+        questionNineAnswerTwo = findViewById(R.id.questionNineAnswerTwo);
+        questionNineAnswerThree = findViewById(R.id.questionNineAnswerThree);
+        questionNineAnswerFour = findViewById(R.id.questionNineAnswerFour);
+
+        questionTenAnswerOne = findViewById(R.id.questionTenAnswerOne);
+        questionTenAnswerTwo = findViewById(R.id.questionTenAnswerTwo);
+        questionTenAnswerThree = findViewById(R.id.questionTenAnswerThree);
+        questionTenAnswerFour = findViewById(R.id.questionTenAnswerFour);
     }
 
     //Save instance state for radio buttons
@@ -428,23 +442,10 @@ public class MainActivity extends AppCompatActivity {
             score++;
         }
 
-        //Initializing question 8 answer
-        questionEightAnswer = findViewById(R.id.questionEightAnswer);
         // +1 for correct answer
         if (questionEightAnswer.getText().toString().equals("1999")) {
             score++;
         }
-
-        //Initializing checkboxes (questions 9 and 10)
-        questionNineAnswerOne = findViewById(R.id.questionNineAnswerOne);
-        questionNineAnswerTwo = findViewById(R.id.questionNineAnswerTwo);
-        questionNineAnswerThree = findViewById(R.id.questionNineAnswerThree);
-        questionNineAnswerFour = findViewById(R.id.questionNineAnswerFour);
-
-        questionTenAnswerOne = findViewById(R.id.questionTenAnswerOne);
-        questionTenAnswerTwo = findViewById(R.id.questionTenAnswerTwo);
-        questionTenAnswerThree = findViewById(R.id.questionTenAnswerThree);
-        questionTenAnswerFour = findViewById(R.id.questionTenAnswerFour);
 
         //Calculating score if 3 correct answers are checked and 1 incorrect answer is unchecked
         if (questionNineAnswerOne.isChecked() && questionNineAnswerTwo.isChecked() && !questionNineAnswerThree.isChecked() && questionNineAnswerFour.isChecked()) {
@@ -463,7 +464,8 @@ public class MainActivity extends AppCompatActivity {
 
     //When user clicks "Reset" button
     public void reset(View view) {
-        //Clear radio buttons
+            //Clear radio buttons
+//Clear radio buttons
         questionOne.clearCheck();
         questionTwo.clearCheck();
         questionThree.clearCheck();
@@ -487,4 +489,3 @@ public class MainActivity extends AppCompatActivity {
         questionTenAnswerFour.setChecked(false);
     }
 }
-
