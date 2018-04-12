@@ -89,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
         if (!TextUtils.isEmpty(selectedAnswerOne)) {
             setRadioButtonState();
         }
-        RadioGroup questionOne = findViewById(R.id.questionOneRadioGroup);
+        questionOne = findViewById(R.id.questionOneRadioGroup);
         questionOne.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup questionOne, int id) {
@@ -111,7 +111,7 @@ public class MainActivity extends AppCompatActivity {
         if (!TextUtils.isEmpty(selectedAnswerTwo)) {
             setRadioButtonState();
         }
-        RadioGroup questionTwo = findViewById(R.id.questionTwoRadioGroup);
+        questionTwo = findViewById(R.id.questionTwoRadioGroup);
         questionTwo.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup questionTwo, int id) {
@@ -133,7 +133,7 @@ public class MainActivity extends AppCompatActivity {
         if (!TextUtils.isEmpty(selectedAnswerThree)) {
             setRadioButtonState();
         }
-        RadioGroup questionThree = findViewById(R.id.questionThreeRadioGroup);
+        questionThree = findViewById(R.id.questionThreeRadioGroup);
         questionThree.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup questionThree, int id) {
@@ -155,7 +155,7 @@ public class MainActivity extends AppCompatActivity {
         if (!TextUtils.isEmpty(selectedAnswerFour)) {
             setRadioButtonState();
         }
-        RadioGroup questionFour = findViewById(R.id.questionFourRadioGroup);
+        questionFour = findViewById(R.id.questionFourRadioGroup);
         questionFour.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup questionFour, int id) {
@@ -177,7 +177,7 @@ public class MainActivity extends AppCompatActivity {
         if (!TextUtils.isEmpty(selectedAnswerFive)) {
             setRadioButtonState();
         }
-        RadioGroup questionFive = findViewById(R.id.questionFiveRadioGroup);
+        questionFive = findViewById(R.id.questionFiveRadioGroup);
         questionFive.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup questionFive, int id) {
@@ -199,7 +199,7 @@ public class MainActivity extends AppCompatActivity {
         if (!TextUtils.isEmpty(selectedAnswerSix)) {
             setRadioButtonState();
         }
-        RadioGroup questionSix = findViewById(R.id.questionSixRadioGroup);
+        questionSix = findViewById(R.id.questionSixRadioGroup);
         questionSix.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup questionSix, int id) {
@@ -221,7 +221,7 @@ public class MainActivity extends AppCompatActivity {
         if (!TextUtils.isEmpty(selectedAnswerSeven)) {
             setRadioButtonState();
         }
-        RadioGroup questionSeven = findViewById(R.id.questionSevenRadioGroup);
+        questionSeven = findViewById(R.id.questionSevenRadioGroup);
         questionSeven.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup questionSeven, int id) {
@@ -391,13 +391,13 @@ public class MainActivity extends AppCompatActivity {
     public void submitAnswers(View view) {
 
         //Initializing the correct answers in RadioGroups
-        RadioButton questionOneAnswerThree = findViewById(R.id.questionOneAnswerThreeButton);
-        RadioButton questionTwoAnswerFour = findViewById(R.id.questionTwoAnswerFourButton);
-        RadioButton questionThreeAnswerOne = findViewById(R.id.questionThreeAnswerOneButton);
-        RadioButton questionFourAnswerTwo = findViewById(R.id.questionFourAnswerTwoButton);
-        RadioButton questionFiveAnswerFour = findViewById(R.id.questionFiveAnswerFourButton);
-        RadioButton questionSixAnswerTwo = findViewById(R.id.questionSixAnswerTwoButton);
-        RadioButton questionSevenAnswerOne = findViewById(R.id.questionSevenAnswerOneButton);
+        questionOneAnswerThree = findViewById(R.id.questionOneAnswerThreeButton);
+        questionTwoAnswerFour = findViewById(R.id.questionTwoAnswerFourButton);
+        questionThreeAnswerOne = findViewById(R.id.questionThreeAnswerOneButton);
+        questionFourAnswerTwo = findViewById(R.id.questionFourAnswerTwoButton);
+        questionFiveAnswerFour = findViewById(R.id.questionFiveAnswerFourButton);
+        questionSixAnswerTwo = findViewById(R.id.questionSixAnswerTwoButton);
+        questionSevenAnswerOne = findViewById(R.id.questionSevenAnswerOneButton);
 
         //Calculating score questions 1-7
         if (questionOneAnswerThree.isChecked()) {
@@ -429,22 +429,22 @@ public class MainActivity extends AppCompatActivity {
         }
 
         //Initializing question 8 answer
-        EditText questionEightAnswer = findViewById(R.id.questionEightAnswer);
+        questionEightAnswer = findViewById(R.id.questionEightAnswer);
         // +1 for correct answer
         if (questionEightAnswer.getText().toString().equals("1999")) {
             score++;
         }
 
         //Initializing checkboxes (questions 9 and 10)
-        CheckBox questionNineAnswerOne = findViewById(R.id.questionNineAnswerOne);
-        CheckBox questionNineAnswerTwo = findViewById(R.id.questionNineAnswerTwo);
-        CheckBox questionNineAnswerThree = findViewById(R.id.questionNineAnswerThree);
-        CheckBox questionNineAnswerFour = findViewById(R.id.questionNineAnswerFour);
+        questionNineAnswerOne = findViewById(R.id.questionNineAnswerOne);
+        questionNineAnswerTwo = findViewById(R.id.questionNineAnswerTwo);
+        questionNineAnswerThree = findViewById(R.id.questionNineAnswerThree);
+        questionNineAnswerFour = findViewById(R.id.questionNineAnswerFour);
 
-        CheckBox questionTenAnswerOne = findViewById(R.id.questionTenAnswerOne);
-        CheckBox questionTenAnswerTwo = findViewById(R.id.questionTenAnswerTwo);
-        CheckBox questionTenAnswerThree = findViewById(R.id.questionTenAnswerThree);
-        CheckBox questionTenAnswerFour = findViewById(R.id.questionTenAnswerFour);
+        questionTenAnswerOne = findViewById(R.id.questionTenAnswerOne);
+        questionTenAnswerTwo = findViewById(R.id.questionTenAnswerTwo);
+        questionTenAnswerThree = findViewById(R.id.questionTenAnswerThree);
+        questionTenAnswerFour = findViewById(R.id.questionTenAnswerFour);
 
         //Calculating score if 3 correct answers are checked and 1 incorrect answer is unchecked
         if (questionNineAnswerOne.isChecked() && questionNineAnswerTwo.isChecked() && !questionNineAnswerThree.isChecked() && questionNineAnswerFour.isChecked()) {
@@ -487,4 +487,3 @@ public class MainActivity extends AppCompatActivity {
         questionTenAnswerFour.setChecked(false);
     }
 }
-
